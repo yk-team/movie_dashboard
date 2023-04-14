@@ -7,12 +7,15 @@ import { About } from "../components/About/About";
 type LandingProps = {};
 
 export const Landing = (props: LandingProps) => {
-    return (
-        <>
-            <Header />
-            <Hero />
-            <Features />
-            <About />
-        </>
-    );
+  return (
+    <>
+      <div >
+        <h1 className="text-sl text-red-500" style={{  marginTop: "60px" }}>some text</h1>
+      </div>
+      <Header />
+      <Hero />
+      <Features />
+      <About />
+    </>
+  );
 };

@@ -17,7 +17,7 @@ connectToDB();
 // routes
 app.get('/', (request: Request, response: Response) => {
     console.log("Someone pinged!");
-    response.send("WooHoo");
+    response.send("WooHoo, Hola");
 });
 
 app.use("/api/users", usersRouter);

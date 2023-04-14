@@ -1,10 +1,10 @@
 # .env.example
-Hola, Kateryna!
+
 Please, create a .env file in the root directory and copy the contents of .env.example to your .env file. Then set the necessary values instead of CHANGE_ME.
 
 # server starting
 
-Run npm command "start:server". Use Ctrl+C/Cmd+C in the terminal to kill server.
+Run npm command in terminal inside your project `npm run start:server`. Use Ctrl+C/Cmd+C in the terminal to kill server.
 
 # Getting Started with Create React App
 
