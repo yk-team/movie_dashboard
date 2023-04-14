@@ -1,5 +1,5 @@
 # .env.example
-
+Hola, Kateryna!
 Please, create a .env file in the root directory and copy the contents of .env.example to your .env file. Then set the necessary values instead of CHANGE_ME.
 
 # server starting
