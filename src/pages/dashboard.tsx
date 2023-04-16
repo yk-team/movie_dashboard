@@ -1,13 +1,14 @@
-import { FC } from "react";
+import { FC, FormEvent, useState } from "react";
+import ComplexNavbar from "../components/ComplexNavbar.tsx/ComplexNavbar";
+import { HeroMovie } from "../components/HeroMovie/HeroMovie";
 
-interface IDashboard {
-
-}
+interface IDashboard { }
 
 export const Dashboard: FC<IDashboard> = () => {
     return (
-        <>
-            <h1>Dashboard</h1>
-        </>
+        <div className="px-3 grid gap-4">
+            <ComplexNavbar />
+            <HeroMovie />
+        </div>
     );
 };
