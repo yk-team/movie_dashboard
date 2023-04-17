@@ -1,3 +1,5 @@
+
+
 import React from "react";
 import {
   Navbar,
@@ -157,7 +159,7 @@ function NavListMenu() {
           <Typography as="a" href="#" variant="small" className="font-normal">
             <MenuItem
               {...triggers}
-              className="hidden items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
+              className=" items-center gap-2 text-blue-gray-900 lg:flex lg:rounded-full"
             >
               <Square3Stack3DIcon className="h-[18px] w-[18px]" /> Pages{" "}
               <ChevronDownIcon
@@ -214,7 +216,7 @@ const navListItems = [
  
 function NavList() {
   return (
-    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center">
+    <ul className="mb-4 mt-2 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-col lg:items-center">
       <NavListMenu />
       {navListItems.map(({ label, icon }, key) => (
         <Typography
@@ -247,19 +249,19 @@ export default function ComplexNavbar() {
   }, []);
  
   return (
-    <Navbar className="mx-auto max-w-screen-xl p-2 lg:rounded-full lg:pl-6">
-      <div className="relative mx-auto flex items-center text-blue-gray-900">
+    <Navbar className="max-w-xs flex-col ">
+      <div className="flex-col mx-auto text-center text-blue-gray-900">
         <Typography
           as="a"
           href="#"
           className="mr-4 ml-2 cursor-pointer py-1.5 font-medium"
         >
-          Material Tailwind
+          Movie-dashboard
         </Typography>
-        <div className="absolute top-2/4 left-2/4 hidden -translate-x-2/4 -translate-y-2/4 lg:block">
+        <div className="flex  lg:block">
           <NavList />
         </div>
-        <IconButton
+        {/* <IconButton
           size="sm"
           color="blue-gray"
           variant="text"
@@ -267,7 +269,7 @@ export default function ComplexNavbar() {
           className="ml-auto mr-2 lg:hidden"
         >
           <Bars2Icon className="h-6 w-6" />
-        </IconButton>
+        </IconButton> */}
         <ProfileMenu />
       </div>
       <MobileNav open={isNavOpen} className="overflow-scroll">

@@ -7,7 +7,7 @@ function App() {
   return (
     <>
       {/* <Landing /> */}
-      <ComplexNavbar />
+      <ComplexNavbar/>
     </>
   );
 }
