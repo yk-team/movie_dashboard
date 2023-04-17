@@ -75,8 +75,6 @@ export const HeroMovie = ({ id }: MovieProps) => {
         fetchMovies();
     }, [id]);
 
-
-
     useEffect(() => {
         console.log("%c Movie:", "background-color: orange; font-size: 14px; font-weight: bold; color: black;", topMovie);
     }, [topMovie]);
