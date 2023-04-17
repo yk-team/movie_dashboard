@@ -1,4 +1,4 @@
-import { Landing } from "./pages/landing";
+import { Landing } from "./pages/Landing";
 import "./App.css";
 import ComplexNavbar from "./components/ComplexNavbar.tsx/ComplexNavbar";
 import { Dashboard } from "./pages/Dashboard";
