@@ -2,7 +2,7 @@ import { FC, FormEvent, useState } from "react";
 import { HeroMovie } from "../components/HeroMovie/HeroMovie";
 import { NavBarLeft } from "../components/ComplexNavbar/NavBarLeft";
 
-interface IDashboard {}
+interface IDashboard { }
 
 export const Dashboard: FC<IDashboard> = () => {
   const [inputValue, setInputValue] = useState("");
@@ -36,18 +36,21 @@ export const Dashboard: FC<IDashboard> = () => {
   };
 
   return (
-    <div className="px-3 grid gap-4">
-      <NavBarLeft/>
-      <HeroMovie />
-      <form onSubmit={handleSubmit}>
-        <input
-          type="text"
-          value={inputValue}
-          onChange={(event) => setInputValue(event.target.value)}
-        />
-        <button type="submit">Submit</button>
-      </form>
-      <div>{answer}</div>
+    <div className="flex px-3 gap-4">
+      <NavBarLeft />
+      <div>
+        <HeroMovie />
+        <form onSubmit={handleSubmit}>
+          <input
+            type="text"
+            value={inputValue}
+            onChange={(event) => setInputValue(event.target.value)}
+          />
+          <button type="submit">Submit</button>
+        </form>
+        <div>{answer}</div>
+      </div>
+
     </div>
   );
 };
