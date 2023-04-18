@@ -1,15 +1,17 @@
 import { Landing } from "./pages/Landing";
 import "./App.css";
-import ComplexNavbar from "./components/ComplexNavbar.tsx/ComplexNavbar";
+
 import { Dashboard } from "./pages/Dashboard";
 import Footer from "./components/Footer/Footer";
+import { NavBarLeft } from "./components/ComplexNavbar/NavBarLeft";
 
 function App() {
   return (
     <>
+      <NavBarLeft />
       {/* <Landing /> */}
-      <Dashboard />
-      <Footer />
+      {/* <Dashboard /> */}
+      {/* <Footer /> */}
     </>
   );
 }
