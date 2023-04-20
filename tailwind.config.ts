@@ -1,12 +1,27 @@
+// import { TailwindConfig } from "tailwindcss/tailwind-config";
 
-        import { TailwindConfig } from 'tailwindcss/tailwind-config';
+// const config: TailwindConfig = {
+//   content: [],
+//   theme: {
+//     extend: {},
+//   },
+// };
 
-        const config: TailwindConfig = {
-  "content": [],
-  "theme": {
-    "extend": {}
-  }
+// module.exports = config;
+
+module.exports = {
+  theme: {
+    colors: {
+      transparent: 'transparent',
+      current: 'currentColor',
+      'white': '#ffffff',
+      'purple': '#3f3cbb',
+      'midnight': '#121063',
+      'metal': '#565584',
+      'tahiti': '#3ab7bf',
+      'silver': '#ecebff',
+      'bubble-gum': '#ff77e9',
+      'bermuda': '#78dcca',
+    },
+  },
 }
-
-        module.exports = config
-      
