@@ -9,7 +9,8 @@
     --color-accent: #F2C526;
     --color-secondary: #0C0E1E;
     --color-text: #FFFF;
-  }
+    --color-border: #bababa96;
+   }
 }
 
 /* body {
