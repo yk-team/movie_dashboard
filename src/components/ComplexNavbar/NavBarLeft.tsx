@@ -1,6 +1,15 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 export const NavBarLeft = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    // Симуляція завантаження даних або дій
+    setTimeout(() => {
+      setIsLoading(false);
+    }, 2000); // Приблизний час завантаження в мілісекундах
+  }, []);
+
   return (
     <>
       <div className="flex rounded-md w-20 border-slate-600 border items-left justify-left h-screen justify-between flex-col">
@@ -36,7 +45,7 @@ export const NavBarLeft = () => {
           </div>
         </div>
         <div className="flex flex-col items-center basis-1/4 justify-end gap-2 mb-8">
-        <a href="/help">
+          <a href="/help">
             <div className="flex flex-col justify-center items-center opacity-70 hover:opacity-60 w-6 active:opacity-50 mb-5">
               <img src="../../img/icon-help.png"></img>
             </div>
