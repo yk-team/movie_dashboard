@@ -26,6 +26,13 @@ export default withMT({
     fontSize: {
       s: "6px",
       xs: "8px",
+      sm: "0.8rem",
+      base: "1rem",
+      xl: "1.25rem",
+      "2xl": "1.5rem",
+      "3xl": "1.9rem",
+      "4xl": "2.5rem",
+      "5xl": "3rem",
     },
     extend: {},
   },
